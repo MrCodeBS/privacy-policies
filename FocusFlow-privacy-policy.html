@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – FocusFlow</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: #f7f8fa;
+      color: #1a1a1a;
+      line-height: 1.7;
+      padding: 0 1rem 4rem;
+    }
+
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid #e3e6ea;
+      padding: 1rem 0;
+      margin-bottom: 2.5rem;
+    }
+
+    .site-header .inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      background: #1a1a2e;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-mark svg {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: #fff;
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+
+    .logo-text {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1a1a2e;
+      letter-spacing: -0.01em;
+    }
+
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #5c6570;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.35rem;
+      line-height: 1.2;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: #5c6570;
+      margin-bottom: 2.5rem;
+    }
+
+    .summary-box {
+      background: #fff;
+      border: 1px solid #e3e6ea;
+      border-left: 3px solid #3ecf8e;
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .summary-box p {
+      font-size: 14px;
+      color: #3d4652;
+      line-height: 1.6;
+    }
+
+    .summary-box strong {
+      color: #1a1a2e;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e3e6ea;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .card h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card h2 .icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .icon-green { background: #d7f0e3; }
+    .icon-blue  { background: #dbeafe; }
+    .icon-amber { background: #fef3c7; }
+    .icon-red   { background: #fde8e8; }
+    .icon-gray  { background: #e8eaed; }
+    .icon-purple { background: #ede9fe; }
+
+    .card h2 .icon svg {
+      width: 14px;
+      height: 14px;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .icon-green svg  { stroke: #1b6b42; }
+    .icon-blue svg   { stroke: #1e40af; }
+    .icon-amber svg  { stroke: #92400e; }
+    .icon-red svg    { stroke: #991b1b; }
+    .icon-gray svg   { stroke: #3d4652; }
+    .icon-purple svg { stroke: #5b21b6; }
+
+    .card p, .card li {
+      font-size: 14px;
+      color: #3d4652;
+      line-height: 1.65;
+    }
+
+    .card ul {
+      padding-left: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    .card li {
+      margin-bottom: 0.35rem;
+    }
+
+    .card li::marker { color: #b0b7c0; }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 0.75rem;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #e8eaed;
+      color: #3d4652;
+    }
+
+    .pill.green { background: #d7f0e3; color: #1b6b42; }
+    .pill.red   { background: #fde8e8; color: #991b1b; }
+
+    .pill svg {
+      width: 11px;
+      height: 11px;
+      stroke: currentColor;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      fill: none;
+      flex-shrink: 0;
+    }
+
+    .contact-box {
+      background: #1a1a2e;
+      color: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .contact-box p {
+      font-size: 14px;
+      color: #b0b7c0;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-box a {
+      color: #3ecf8e;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .divider {
+      height: 1px;
+      background: #e3e6ea;
+      margin: 0.75rem 0;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.5rem; }
+      .card { padding: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <div class="logo-mark">
+      <svg viewBox="0 0 18 18">
+        <circle cx="9" cy="9" r="6"/>
+        <line x1="9" y1="5" x2="9" y2="9"/>
+        <line x1="9" y1="9" x2="12" y2="11"/>
+      </svg>
+    </div>
+    <span class="logo-text">FocusFlow</span>
+  </div>
+</header>
+
+<main class="content">
+
+  <p class="eyebrow">Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective date: June 19, 2026 &nbsp;·&nbsp; FocusFlow Chrome Extension</p>
+
+  <div class="summary-box">
+    <p><strong>Short version:</strong> FocusFlow stores all your data locally in your browser. We do not collect, transmit, sell, or share any personal information. Nothing leaves your device.</p>
+  </div>
+
+  <div class="card">
+    <h2>
+      <span class="icon icon-green">
+        <svg viewBox="0 0 14 14"><path d="M2 7l3.5 3.5L12 3"/></svg>
+      </span>
+      What data FocusFlow stores
+    </h2>
+    <p>FocusFlow stores the following information exclusively in your browser's local storage (<code>chrome.storage.local</code>):</p>
+    <ul>
+      <li>The task description you type into the extension popup</li>
+      <li>Your focus session start time</li>
+      <li>Time spent on each website domain (aggregated daily totals)</li>
+      <li>Your list of productive and distracting sites</li>
+      <li>Whether the overlay widget is minimized</li>
+    </ul>
+    <div class="divider"></div>
+    <div class="pill-row">
+      <span class="pill green">
+        <svg viewBox="0 0 11 11"><path d="M1.5 5.5l2.5 2.5 5-5"/></svg>
+        Stored locally only
+      </span>
+      <span class="pill green">
+        <svg viewBox="0 0 11 11"><path d="M1.5 5.5l2.5 2.5 5-5"/></svg>
+        Never transmitted
+      </span>
+      <span class="pill red">
+        <svg viewBox="0 0 11 11"><line x1="2" y1="2" x2="9" y2="9"/><line x1="9" y1="2" x2="2" y2="9"/></svg>
+        No external servers
+      </span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>
+      <span class="icon icon-blue">
+        <svg viewBox="0 0 14 14"><rect x="2" y="2" width="10" height="10" rx="2"/><path d="M5 7h4M7 5v4"/></svg>
+      </span>
+      Browsing history and tab data
+    </h2>
+    <p>FocusFlow reads the active tab's URL to measure time spent on different domains. This information is:</p>
+    <ul>
+      <li>Processed entirely within the extension's background service worker</li>
+      <li>Aggregated by domain name only (e.g. <em>github.com</em>) — full URLs, page titles, and search queries are never recorded</li>
+      <li>Stored locally as daily totals and automatically keyed by date</li>
+      <li>Never sent to any remote server or third party</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>
+      <span class="icon icon-red">
+        <svg viewBox="0 0 14 14"><circle cx="7" cy="7" r="5"/><line x1="5" y1="5" x2="9" y2="9"/><line x1="9" y1="5" x2="5" y2="9"/></svg>
+      </span>
+      What we do <em>not</em> collect
+    </h2>
+    <ul>
+      <li>No names, email addresses, or account information</li>
+      <li>No full URLs, page content, or search queries</li>
+      <li>No location data</li>
+      <li>No device identifiers</li>
+      <li>No cookies or cross-site tracking</li>
+      <li>No analytics or telemetry of any kind</li>
+      <li>No data sold or shared with advertisers or third parties</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>
+      <span class="icon icon-amber">
+        <svg viewBox="0 0 14 14"><path d="M7 2v5M7 9v1"/><circle cx="7" cy="7" r="5"/></svg>
+      </span>
+      Permissions used and why
+    </h2>
+    <p>FocusFlow requests the following Chrome permissions:</p>
+    <ul>
+      <li><strong>storage</strong> — to save your session, task, and site-time data locally in your browser</li>
+      <li><strong>tabs &amp; activeTab</strong> — to read the domain of your active tab and track focus time</li>
+      <li><strong>scripting</strong> — to inject the small focus overlay widget onto web pages</li>
+      <li><strong>alarms</strong> — to periodically save your daily stats to local storage</li>
+      <li><strong>host_permissions (&lt;all_urls&gt;)</strong> — to display the overlay widget on all sites you visit during a session</li>
+    </ul>
+    <p style="margin-top:0.75rem;">No permission is used to transmit data externally.</p>
+  </div>
+
+  <div class="card">
+    <h2>
+      <span class="icon icon-gray">
+        <svg viewBox="0 0 14 14"><circle cx="7" cy="7" r="5"/><path d="M7 5v2.5l1.5 1.5"/></svg>
+      </span>
+      Data retention and deletion
+    </h2>
+    <p>Daily usage statistics are stored under a date-keyed entry (e.g. <code>stats_2026-06-19</code>). You can clear all data at any time by:</p>
+    <ul>
+      <li>Removing the FocusFlow extension from Chrome, which deletes all local storage</li>
+      <li>Using Chrome's built-in extension storage clear option at <code>chrome://settings/content/all</code></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>
+      <span class="icon icon-purple">
+        <svg viewBox="0 0 14 14"><path d="M7 2C4.24 2 2 4.24 2 7s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 2v3l2 1"/></svg>
+      </span>
+      Children's privacy
+    </h2>
+    <p>FocusFlow does not knowingly collect any information from children under 13. The extension does not collect personal data from any user regardless of age.</p>
+  </div>
+
+  <div class="card">
+    <h2>
+      <span class="icon icon-blue">
+        <svg viewBox="0 0 14 14"><path d="M2 4h10M2 7h6M2 10h8"/></svg>
+      </span>
+      Changes to this policy
+    </h2>
+    <p>If we make any changes to this privacy policy, the updated version will be posted on this page with a revised effective date. Continued use of the extension after changes are posted constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <div class="contact-box">
+    <p>Questions about this privacy policy?</p>
+    <a href="mailto:privacy@example.com">privacy@example.com</a>
+  </div>
+
+</main>
+
+</body>
+</html>
